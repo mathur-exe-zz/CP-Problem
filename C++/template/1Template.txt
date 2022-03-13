@@ -2,8 +2,10 @@
 #include<iostream>
 #include<math.h>
 #include <map>
+#include <vector>
+#include <stack>
+#include<unordered_map>
 using namespace std;
-
 /* 
     
 */
