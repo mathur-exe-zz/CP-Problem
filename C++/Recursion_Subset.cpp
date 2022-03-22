@@ -2,21 +2,24 @@
 #include<iostream>
 #include<math.h>
 #include <map>
+#include <vector>
 using namespace std;
 
 /* 
     
 */
 
-vector <int> v;
+vector <int> subset;
 int n;
 
 // cout <<
 // cin >>
 
 void search(int k) {
-    if (k == n+1) {
-        // process subset
+    if (k == n+1)  {
+        cout << "sht";
+        for(int i =0; i<k; i++)
+            cout << subset[i];
     } 
     else {
         // include k in the subset
@@ -37,9 +40,9 @@ int main(int argc, char const *argv[]) {
 
     cin >> n;
     for(int i=0; i<n; i++)
-        cin >> v[i];
+        cin >> subset[i];
 
-    search()
+    search(n);
 
     return 0;
 }

@@ -30,6 +30,10 @@ int count(int prev, int n){
 
 }
 
+int print(int k, int n, string s){
+    (n==0)    
+}
+
 int main(int argc, char const *argv[]) {
 #ifndef ONLINE_JUDGE
     freopen("input_rec.txt", "r", stdin);
