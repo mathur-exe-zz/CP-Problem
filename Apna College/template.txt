@@ -1,6 +1,9 @@
 #include <stdio.h>
+#include <bits/stdc++.h>
 #include<iostream>
 #include<math.h>
+#include<climits>
+#include<vector>
 #include <map>
 using namespace std;
 
