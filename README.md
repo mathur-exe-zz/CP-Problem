@@ -70,3 +70,64 @@ for(auto element:v) {
 }
 
 ```
+
+
+## Algorithm 
+
+### Searching and Sorting 
+
+![Time Complexity of Binary Search = log(n)](img/TimeComplexity_binarySearch.png)
+
+ 
+
+<details> 
+<summary> Selection Sort </summary> 
+
+```
+    for(int i=1; i<n; i++) {
+        int current = arr[i];
+        int j=i-1;
+        while(arr[j] > current && j>=0) {
+            arr[j+1] = arr[j];
+            j--;
+        }
+        arr[j+1] = current;
+    }
+```
+</details>
+
+<details> 
+<summary> Bubble Sort </summary> 
+
+- Check if the i-th element is larger than (i+1)-th element. Then Again we compare the element upto the 2nd last element
+
+```
+    int ctr = 1;
+    while(ctr < n) {
+        for(int i =0; i<n-ctr; i++) {
+            if(arr[i] > arr[i+1]) {
+                int temp = arr[i];
+                arr[i] = arr[i+1];
+                arr[i+1] = temp;
+            }
+        }
+        ctr++;
+    }
+```
+</details>
+
+<details> 
+<summary> Insertion Sort </summary> 
+
+```
+    for(int i=1; i<n; i++) {
+        int current = arr[i];
+        int j=i-1;
+        while(arr[j] > current && j>=0) {
+            arr[j+1] = arr[j];
+            j--;
+        }
+        arr[j+1] = current;
+    }
+```
+</details>
