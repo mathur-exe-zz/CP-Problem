@@ -5,6 +5,17 @@
 - 
 
 ### Time Complexity 
+
+<details>
+<summary> Constrain Analysis </summary>
+
+- [Apna College](https://youtu.be/eJcBH0xvG98?t=1035)
+- To calculate the time complexity we always refer to the variable which is looped
+- For example: Here, time complexity can be calculated using the variable ```N```
+</details>
+
+
+
 ![](img/Time_Complexity.png)
 <details>
 <summary> Log n </summary>
@@ -71,6 +82,24 @@ for(auto element:v) {
 
 ```
 
+<details> 
+<summary> Subarray vs Subsequence </summary>
+
+- Subarray 
+    - continuous part of an array.
+    - Order can be changed
+    - [1, 2, 3, 4] = 1), (2), (3), (4), (1,2), (2,3), (3,4), (1,2,3), (2,3,4) and (1,2,3,4)
+    - #Subarray = nC2 + n
+
+
+- Subsequence
+    - derived from another sequence by removing >= 0 elements 
+    - Order remains the same
+    - [1, 2, 3, 4] = 1), (2), (3), (4), (1,2), (1,3),(1,4), (2,3), (2,4), (3,4), (1,2,3), (1,2,4), (1,3,4), (2,3,4), (1,2,3,4)
+    - #Sequence = 2^n
+
+
+</details>
 
 ## Algorithm 
 
