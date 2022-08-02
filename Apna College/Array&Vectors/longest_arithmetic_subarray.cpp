@@ -23,7 +23,7 @@ using namespace std;
     - Simultaneously, we'll keep track the largest arithmetic array    
 */
 
-int main(int argc, char const *argv[]) {
+void main(int argc, char const *argv[]) {
     // Array i/p & O/p
     int n;
     cin >> n;
@@ -57,5 +57,5 @@ int main(int argc, char const *argv[]) {
     //     cout << arr[i] << " ";
 
 
-    return 0;
+    return;
 }
