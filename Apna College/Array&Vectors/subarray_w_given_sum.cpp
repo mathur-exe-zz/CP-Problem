@@ -11,6 +11,7 @@ using namespace std;
 // cin >>
 
 /*
+    Q: Find the subarray for a given sum
     Approach: Two Pointer
 */
 
@@ -30,7 +31,7 @@ int main(int argc, char const *argv[]) {
         cin >> arr[i];
 
     int i =0, j=0, st=-1, en=-1, sum=0;
-    
+
     while(j<n) {
         sum += arr[j];
         while(sum > s) {

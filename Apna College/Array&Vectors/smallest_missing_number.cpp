@@ -17,30 +17,30 @@ int main(int argc, char const *argv[]) {
     freopen("output.txt", "w", stdout);
 #endif
 
-    // Code here
-
-    
     // Array i/p & O/p
-    int n, sum=0;
+    int n;
+    const int N = 1e6+2;
     cin >> n;
-
     int arr[n];
-    for(int i=0; i<n;i++)
+    int check[N];
+    for(int i=0; i<n;i++) {
         cin >> arr[i];
-
+    }
+    for(int i =0; i<N; i++) {
+        check[i] = false;
+    }
     for(int i =0; i<n; i++) {
-        sum =  0;
-        for (int j=i; j<n; j++) {
-            sum += arr[j];
-            cout << arr[j] << " ";
+        if(arr[i] >= 0) {
+            check[arr[i]] = true;
         }
-            cout << sum << endl;
+    }
+    for(int i=0; i<N; i++) {
+        if(check[i] == false) {
+            cout  << "Smallest missing: " << i << endl;
+            return 0;
+        }
     }
 
-
-    // for(int i=0; i<n; i++) 
-    //     cout << arr[i] << " ";
-    
-
+    cout << "Nth found" << endl;
     return 0;
 }
